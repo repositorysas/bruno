@@ -1,0 +1,18 @@
+meta {
+  name: Otorisasi Sales Order
+  type: http
+  seq: 14
+}
+
+get {
+  url: {{API_URL}}/otorisasi/salesorder
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "soid" : "SO/202503/0055"
+      //"soidkeyword" : "BTS-SO.24110157"
+  }
+}

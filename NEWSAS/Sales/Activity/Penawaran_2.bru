@@ -1,18 +1,18 @@
 meta {
-  name: Purchase Order_1
+  name: Penawaran_2
   type: http
-  seq: 4
+  seq: 3
 }
 
-post {
-  url: {{API_URL}}/purchaseorder
+patch {
+  url: {{API_URL}}/penawaran
   body: json
   auth: inherit
 }
 
 body:json {
   {
-  
+      "penawaranid": "TC/QUOT/2602/0003",
       "transdate": "2026-02-03 00:00:00.000",
       "currid": "IDR",
       "suppid": "SP141",
@@ -30,7 +30,7 @@ body:json {
       "custid": "DP207",
       "custname": "PT. PERTAMINA HULU ENERGI OFFSHORE NORTH WEST JAVA",
       "fgtax": "T",
-      "nilaitax": "11.0000",
+      "nilaitax": "0.0000",
       "discamount": ".0000",
           "detail": [
           {

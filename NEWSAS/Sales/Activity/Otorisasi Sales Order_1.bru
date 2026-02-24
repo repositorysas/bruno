@@ -1,0 +1,18 @@
+meta {
+  name: Otorisasi Sales Order_1
+  type: http
+  seq: 15
+}
+
+patch {
+  url: {{API_URL}}/otorisasi/salesorder
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "soid" : "SO/202503/0055",
+      "fgoto" : "DR"
+  }
+}
