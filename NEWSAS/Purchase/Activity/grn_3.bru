@@ -1,0 +1,17 @@
+meta {
+  name: grn_3
+  type: http
+  seq: 10
+}
+
+delete {
+  url: {{API_URL}}/grn
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "grnid": "SAS/GR/2603/0001"
+  }
+}

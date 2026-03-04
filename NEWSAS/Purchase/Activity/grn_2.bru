@@ -1,0 +1,35 @@
+meta {
+  name: grn_2
+  type: http
+  seq: 9
+}
+
+patch {
+  url: {{API_URL}}/grn
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "grnid": "SAS/GR/2603/0001",
+      "transdate": "20260304",
+      "suppid": "CSC028",
+      "warehouseid" : "01GU",
+      "poid": "SAS/PO/2602/0067",
+      "note": "ppp",
+      "detail": [
+          {
+              "itemid": "88.305.002",
+              "qty": 1,
+              "price": 500000000,
+              "detailsn":[
+                  {
+                      "snid": "123",
+                      "fgsn": "Y"
+                  }
+              ]
+          }
+      ]
+  }
+}
